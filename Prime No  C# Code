@@ -1,0 +1,33 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+
+namespace Prime_Number
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int flag = 0;
+            int a;
+            int x = Convert.ToInt16(Console.ReadLine());
+            a = x / 2;
+            for (int i = 2; i <= a; i++)
+            {
+                if (x % i == 0)
+                {
+                    Console.WriteLine("Not Prime");
+                    flag = 1;
+                    break;
+                }
+            }
+                if (flag == 0)
+                {
+                    Console.WriteLine("Prime");
+                 
+                }
+
+            }
+        }
+    }
