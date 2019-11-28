@@ -1,0 +1,28 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+
+namespace ConsoleApplication5
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+          
+           Console.Write("Username " );
+            int y = Convert.ToInt32(Console.ReadLine());
+            if ( y == 3969 )
+            { Console.WriteLine("Enter  Velocity");
+              int x = Convert.ToInt32(Console.ReadLine());
+              Console.WriteLine("Enter Time");
+              int t = Convert.ToInt32(Console.ReadLine());
+              int z = x / t;
+              Console.WriteLine("The Acceleration is " + z ) ;
+            }
+            else
+            { Console.WriteLine("Wrong Password"); } 
+           }
+        }
+    }
+}
