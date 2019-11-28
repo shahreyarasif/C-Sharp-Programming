@@ -1,0 +1,37 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+
+namespace SirZubairProgramCalculator
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {int z;
+            int x = Convert.ToInt16(Console.ReadLine());
+            int y = Convert.ToInt16(Console.ReadLine());
+            string opt = Console.ReadLine();
+            switch(opt)
+            {
+                case "+":
+                    z=x+y;
+                    Console.WriteLine("The answer is "+z);
+                    break;
+                case "-":
+                    z = x - y;
+                    Console.WriteLine(z);
+                    break;
+                case "*":
+                    z = x * y;
+                    Console.WriteLine(z);
+                    break;
+                case "/":
+                    z = x / y;
+                    Console.WriteLine(z);
+                    break;
+            }
+
+        }
+    }
+}
