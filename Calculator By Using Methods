@@ -1,0 +1,65 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+
+namespace _1program
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("\t\t\t\tCalculator");
+            Console.WriteLine("Enter 1 For Addition ");
+            Console.WriteLine("Enter 2 For Subtraction ");
+            Console.WriteLine("Enter 3 For Multiplication ");
+            Console.WriteLine("Enter 4 For Division ");
+            int a = Convert.ToInt32(Console.ReadLine());
+            if (a == 1) { Addition(); }
+            if (a == 2) { subtraction(); }
+            if (a == 3) { multiplication(); }
+            if (a == 4) { division(); }
+        }
+        static void Addition() {
+            Console.WriteLine("Enter First No");
+            int x = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Enter Second No");
+            int y = Convert.ToInt32(Console.ReadLine());
+            int z = x + y;
+            Console.WriteLine("Answer is " +z  ); 
+        
+        }
+        static void subtraction()
+        {
+            Console.WriteLine("Enter First No");
+            int x = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Enter Second No");
+            int y = Convert.ToInt32(Console.ReadLine());
+            double z = x - y;
+            Console.WriteLine("Answer is " + z);
+
+        }
+        static void multiplication()
+        {
+            Console.WriteLine("Enter First No");
+            int x = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Enter Second No");
+            int y = Convert.ToInt32(Console.ReadLine());
+            int z = x * y;
+            Console.WriteLine("Answer is " + z);
+
+        }
+        static void division()
+        {
+            Console.WriteLine("Enter First No");
+            int x = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Enter Second No");
+            int y = Convert.ToInt32(Console.ReadLine());
+            double z = x / y;
+            Console.WriteLine("Answer is " + z);
+
+        }
+
+
+    }
+}
