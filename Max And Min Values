@@ -1,0 +1,43 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+
+namespace SirZubairMax
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+          
+            int max = -100000000;
+            int min = 100000000;
+            int a = 0;
+            int b = 0;
+            for (int i = 1; i <= 10; i++)
+            {
+                int y = Convert.ToInt16(Console.ReadLine());
+                if (y > max)
+                {
+                    a = max;
+                    max = y;
+
+                }
+                
+                if (y < min)
+                {
+                    b = y;
+                    min = y;
+                }
+            }
+
+            
+
+            Console.WriteLine("The Max Value is "+max);
+            Console.WriteLine("The Second Max Value is " + a);
+
+            Console.WriteLine("The min Value is " + min);
+            Console.WriteLine("The Second min Value is " + b);
+        }
+    }
+}
