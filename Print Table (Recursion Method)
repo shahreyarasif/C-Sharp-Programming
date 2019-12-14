@@ -1,0 +1,27 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+
+namespace ConsoleApplication23
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {                   
+            m1(1);        
+        }
+        static public void m1(int a)
+        {
+           
+            if (a <= 10)
+            {
+                Console.WriteLine("4 "+" x "+a+" = " +  a*4);
+                a++;
+                m1(a);
+            }
+        
+        }
+        
+        }
+}
