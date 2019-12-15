@@ -1,0 +1,30 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+
+namespace ConsoleApplication26
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            string a = Console.ReadLine();
+            int i = a.Length;
+
+            m1(a, i);
+
+        }
+        static public void m1(string a, int i)
+        {
+            if (i >= 1)
+            {
+                Console.Write(((a.Length + 1) - i) + " ");
+                i--;
+                m1(a, i);
+
+            }
+
+        }
+    }
+}
